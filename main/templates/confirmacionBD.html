@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block encabezado %}
+  <h3>Carga de la Base de datos. Confirmación:</h3>
+{% endblock %}
+
+{% block contenido %}
+  <form id='formulario' method='post' action=''>{% csrf_token %}
+    {{formulario}}
+		<input class="boton_personalizado" type="submit" name="Aceptar" value="Aceptar">
+    <hr>
+    <p>AVISO: Este proceso es lento, borra la base de datos actual y requiere conexión a internet.</p>
+    <p>El número de páginas afecta al tiempo que toma el proceso, mientras mas páginas, mas tiempo.</p>
+	</form>
+{% endblock %}

@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block encabezado %}
+    <h3>Inicio</h3>
+{% endblock %}
+
+{% block contenido %}
+    <p>Actualmente tenemos registrados {{num_animes}} animes</p>
+    <p>Y un total de {{num_puntuaciones}} puntuaciones</p>
+    <hr>
+
+    <h4> ¿Qué es un AnimeScrapper? </h4>
+    <p>Una herramienta para dar a conocer el anime en plena expansión del mismo como método de 
+        entretenimiento de masas. Puedes iniciarte aquí para disfrutar del anime e ir conociendo más 
+        sobre el mismo. Descubrir en definitiva si te puede gustar disfrutar de este medio de 
+        entrenimiento.</p>
+
+    <h4> ¿Qué es un anime? </h4>
+    <p>Anime, también escrito como ánime y animé en español, es un término que engloba a la 
+        animación tradicional o por computadora de procedencia japonesa.</p>
+    <p>Es la adaptación japonesa de la palabra «animación». Su uso por parte del público extranjero 
+        para referirse a la animación concretamente japonesa, ha terminado por convertirla popularmente 
+        en un término que identifica a la animación de procedencia japonesa.</p>
+    <p>El anime es un medio de gran expansión en Japón, siendo al mismo tiempo un producto de 
+        entretenimiento comercial y cultural, lo que ha ocasionado un fenómeno cultural en masas 
+        populares y una forma de arte tecnológico.</p>
+
+    <h4> ¿Qué es una OVA? </h4>
+    <p>Una OVA es un Original Video Animation, es decir, un capítulo especial que se realiza 
+        para ser lanzada de forma directa y exclusiva en formato doméstico, a diferencia de su 
+        correspondiente serie de animación, que se emite por televisión.</p>
+
+    <b>*Nota: recuerde que al buscar por un título este debe escribirse en su transliteración del 
+        japones al alfabeto europeo, pocos animes tienen un título en ingles y mucho menos español.</b>
+{% endblock %}

@@ -1,0 +1,41 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang='es'>
+    <head>
+        <link rel="stylesheet" href="{% static 'css/style.css' %}">
+        <meta charset='utf-8'>
+        <title>Anime Scraper</title>
+    </head>
+    <body class="nav">
+        <div class="sidebar-container">
+            <div class="sidebar-logo">
+                AnimeScraper
+            </div>
+            <ul class="sidebar-navigation">
+                <li class="header">Principal</li>
+                <li><a href="/">Inicio</a></li>
+                <li><a href="/carga">Cargar Base de Datos</a></li>
+                <li><a href="/cargaRS">Cargar Sistema de Recomendación</a></li>
+
+                <li class="header">Busquedas</li>
+                <li><a href="/buscaranimesportitulo">Buscar por título</a></li>
+                <li><a href="/buscaranimesportipo">Buscar por tipo</a></li>
+                <li><a href="/buscaranimesporsinopsis">Buscar por sipnosis</a></li>
+                <li><a href="/buscaranimesporgenero">Buscar por genero</a></li>
+
+                <li class="header">Recomendaciones</li>
+                <li><a href="/recomendadossimilares">Recomiéndame un anime similar</a></li>
+                <li><a href="/recomendadosporpuntuacion">Recomiéndame por puntuaciones</a></li>
+        </div>
+        
+        <div class="content-container">
+            <div class="container-fluid">
+                <div class="jumbotron">
+                    {% block encabezado %}{% endblock %}  
+                    {% block contenido %}{% endblock %}
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

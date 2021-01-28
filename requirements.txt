@@ -1,0 +1,6 @@
+numpy
+Whoosh
+beautifulsoup4
+Django
+lxml
+requests

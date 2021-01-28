@@ -1,0 +1,40 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load split %}
+
+{% block encabezado %}
+<h3> Búsqueda de anime: </h3>
+{% endblock %}
+
+{% block contenido %}
+    	<form id="formulario" method="post" action=''>{% csrf_token %}
+    		{{formulario}}
+    		<input class='boton_personalizado' type='submit' value='Realizar Búsqueda'/>
+    	</form>
+	    <hr>
+	    {% if result %}
+			<p> Total de animaciones resultado de la busqueda:  {{ result|length }}</p>
+			{% for anime,sinopsis in result.items %}
+				<img src="/static/Imagenes/{{anime.titulo}}.jpeg" alt="No tiene Imagen" width="200" height="300"> 
+				<dt><b>Título: </b>{{anime.titulo}}</dt>
+					<dd><b>Tipo de animación: </b>{{anime.tipo_anime}}</dd>
+					<dd><b>Rating: </b>{{anime.rating}}</dd>
+					<dd><b>Numero de votos: </b> {{anime.num_votos}}</dd>
+					<dd><b>Numero de seguidores: </b> {{anime.seguidores}}</dd>
+					<dd><b>Estado: </b> {{anime.estado}}</dd>
+					<dd><b>Generos: </b>
+					{% with anime.generos|split:"," as generos %}
+						{% for genero in generos %}
+							<form class="in_line" id="formulario" method="post" action='/buscaranimesporgenero/'>{% csrf_token %}
+								<input id="genero" name="genero" type="hidden" value="{{genero}}"/>
+								<input class="boton_personalizado" type="submit" value="{{genero}}"/>
+							</form>
+						{% endfor %}
+					{% endwith %}
+					</dd>
+					<dd><b>Sinopsis: </b> {{sinopsis}}</dd>
+				<hr>
+				</br>
+			{% endfor %}
+		{% endif %}
+{% endblock %}

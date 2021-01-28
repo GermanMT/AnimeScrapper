@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+
+{% block encabezado %}
+  <h3>Carga del Sistema de Recomendación. Confirmación:</h3>
+{% endblock %}
+
+{% block contenido %}
+  <form id='formulario' method='post' action=''>{% csrf_token %}
+    {{formulario}}
+		<input class="boton_personalizado" type="submit" name="Aceptar" value="Aceptar">
+    <hr>
+    <p>AVISO: Este proceso es lento, tiene que volver a crear el Sistema de Recomendación 
+        con mas de un millón de puntuaciones.</p>
+	</form>
+{% endblock %}
