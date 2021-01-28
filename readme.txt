@@ -9,9 +9,9 @@ con el comando "./manage.py runserver".
 2. Antes de comenzar, instalar las dependencias del fichero de requisitos con el comando 
 "pip install -r requirements.txt".
 
-3. La base de datos ha sido cargada escrapeando las 140 páginas de la web donde he estraído los datos 
-y el dataset con las puntuaciones, en total son unos 3200 animes aprox. y unas 500.000 puntuaciones 
-aprox. Por lo cual recomiendo probar las funcionalidades antes de probar el populate, porque cargar 
-tal cantidad de información puede ser tedioso.
+3. La base de datos y el indexado han sido cargados escrapeando las 140 páginas de la web donde he 
+estraído los datos y el dataset con las puntuaciones, en total son unos 3200 animes aprox. y unas 
+500.000 puntuaciones aprox. Por lo cual recomiendo probar las funcionalidades antes de probar el 
+populate, porque cargar tal cantidad de información puede ser tedioso.
 
 4. El anterior punto también puede ser considerado a la hora de cargar el sistema de recomendación.
