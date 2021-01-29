@@ -28,7 +28,7 @@
 						{% for genero in generos %}
 							<form class="in_line" id="formulario" method="post" action='/buscaranimesporgenero/'>{% csrf_token %}
 								<input id="genero" name="genero" type="hidden" value="{{genero}}"/>
-								<input class="genero" type="submit" value="{{genero}}"/>
+								<input class="boton_personalizado" type="submit" value="{{genero}}"/>
 							</form>
 						{% endfor %}
 					{% endwith %}
