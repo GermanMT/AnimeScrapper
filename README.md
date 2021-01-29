@@ -20,6 +20,4 @@ estraído los datos y el dataset con las puntuaciones, en total son unos 3200 an
 500.000 puntuaciones aprox. Por lo cual recomiendo probar las funcionalidades antes de probar el 
 populate, porque cargar tal cantidad de información puede ser tedioso.
 
-5. El anterior punto también puede ser considerado a la hora de cargar el sistema de recomendación. El sistema
-de recomendación viene cargado desde Ubuntu por lo cual si se trabaja en Windows se debe borrar el dataRS.dat y 
-poblarlo de nuevo, por problemas de incompatibilidad.
+5. El anterior punto también puede ser considerado a la hora de cargar el sistema de recomendación.
