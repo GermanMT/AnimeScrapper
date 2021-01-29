@@ -1,7 +1,7 @@
 Por favor lea este fichero antes de empezar a ver el código:
 
-1. El sistema se ha desarrollado desde una distribución de Linux, en concreto Ubuntu 20.04 LTS, por lo cual 
-se recomienda trabajar desde esa distribución.
+1. El sistema se ha desarrollado desde una distribución de Linux, en concreto Ubuntu 20.04 LTS, por 
+lo cual se recomienda trabajar desde esa distribución.
 
 2. Este proyecto se puede desplegar desde un entorno virtual, si no se quiere utilizar el entorno 
 propio de su pc, por evitar instalar dependencias innecesarias en él. Este se puede 
@@ -18,6 +18,4 @@ estraído los datos y el dataset con las puntuaciones, en total son unos 3200 an
 500.000 puntuaciones aprox. Por lo cual recomiendo probar las funcionalidades antes de probar el 
 populate, porque cargar tal cantidad de información puede ser tedioso.
 
-5. El anterior punto también puede ser considerado a la hora de cargar el sistema de recomendación. El sistema
-de recomendación viene cargado desde Ubuntu por lo cual si se trabaja en Windows se debe borrar el dataRS.dat y 
-poblarlo de nuevo, por problemas de incompatibilidad.
+5. El anterior punto también puede ser considerado a la hora de cargar el sistema de recomendación.
