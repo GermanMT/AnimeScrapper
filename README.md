@@ -1,6 +1,6 @@
 # AnimeScrapper
 
-Este es el proyecto desarrollado para la asignatura Acceso Inteligente a la Información (AII). Haciendo uso de las técnicas de scraping, indexación y sistema de recomendación, en Django. Leer el atentamente las siguientes indicaciones (también disponibles dentro del readme.txt):
+Este es el proyecto desarrollado para la asignatura Acceso Inteligente a la Información (AII). Haciendo uso de las técnicas de scraping, indexación y sistema de recomendación, en Django. Leer atentamente las siguientes indicaciones (también disponibles dentro del readme.txt):
 
 1. El sistema se ha desarrollado desde una distribución de Linux, en concreto Ubuntu 20.04 LTS, por lo cual 
 se recomienda trabajar desde esa distribución.
