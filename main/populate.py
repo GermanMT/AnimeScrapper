@@ -40,9 +40,6 @@ def extraer_animes(numero):
 def extraer_pagina(url):
     lista_db = []
     lista_index = []
-    #Necesitamos identificarnos como un navegador por la propia seguridad de la página, ya que al
-    #hacerlo como una librería de python esta no nos deja entrar. Una vez hecha la request
-    #podemos abir la url y extraer la información como siempre.
     headers = {'User-Agent': 'Mozilla/5.0'}
     req = urllib.request.Request(url, headers=headers)
     f = urllib.request.urlopen(req).read()
@@ -97,7 +94,7 @@ def almacenar_animes(numero):
 def almacenar_puntuaciones():
     puntuaciones=[]
 
-    file = open('AnimeData/UserAnimeList.csv', 'r')
+    file = open('AnimeData/UserAnimeList.csv', 'r', encoding='utf8')
     for line in file.readlines()[1:-1]:
         line = line.strip().split(',')
         try:

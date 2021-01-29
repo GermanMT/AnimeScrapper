@@ -67,8 +67,6 @@ def buscar_tipo(request):
         formulario = BusquedaPorTipoForm(request.POST)      
         if formulario.is_valid():
             animes = Anime.objects.filter(tipo_anime__exact=formulario.cleaned_data['tipo'])
-            #Cogemos 30 animes random del tipo para que el usuario pueda probar a conocer uno
-            #de ese tipo, sin cargar todos para reducir tiempos
             num=len(animes)
             if num > 31:
                 random = randrange(num-31)
